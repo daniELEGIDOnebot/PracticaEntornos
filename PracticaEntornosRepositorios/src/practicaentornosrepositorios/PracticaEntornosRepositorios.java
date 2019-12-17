@@ -19,14 +19,14 @@ public class PracticaEntornosRepositorios {
     public static void main(String[] args) {
         // TODO code application logic here
         double temperaturas[] = new double[7];
-        
+        char respuesta = 'n';
         String diaSemana[] = {"lunes", "martes", "miercoles", "jueves", "sabado", "domingo"};
         double suma = 0, max = 0, min = 0;
         int dia, posMin = 0, posMax = 0;
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
 
-        
+        do {
             System.out.println("Anota la temperatura de la semana");
             for (int i = 0; i < temperaturas.length; i++) {
                 System.out.println(diaSemana[i] + ":");
